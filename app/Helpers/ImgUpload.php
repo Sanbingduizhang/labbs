@@ -61,7 +61,6 @@ class ImgUpload
      */
     public function reduceSize($file_path, $max_width)
     {
-        dd(get_class(Image::make($file_path)));
         //先实例化,传参是文件的磁盘物理路径
         $image = Image::make($file_path);
 
